@@ -3,7 +3,7 @@
 Displays file and image attachments with media, metadata, upload states and
 interactive actions for chat composers, message threads and upload lists.
 
-![react-native-attachment screenshot](https://raw.githubusercontent.com/s1099/react-native-attachment/main/images/screenshot.png)
+<img src="https://raw.githubusercontent.com/s1099/react-native-attachment/main/images/screenshot.png" alt="react-native-attachment screenshot" width="280">
 
 - **Zero runtime dependencies.** Only `react` and `react-native` peers — no
   Reanimated, no gradient library, no styling framework.
