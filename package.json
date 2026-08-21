@@ -1,0 +1,58 @@
+{
+  "name": "react-native-attachment",
+  "version": "0.1.0",
+  "description": "File and image attachments for React Native — media, metadata, upload states and actions.",
+  "license": "MIT",
+  "type": "module",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "react-native": "./dist/index.js",
+  "types": "./dist/types/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/types/index.d.ts",
+      "react-native": "./dist/index.js",
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs",
+      "default": "./dist/index.js"
+    },
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "dist",
+    "src",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "clean": "rm -rf dist",
+    "build:js": "bun build ./src/index.ts --outfile ./dist/index.js --format esm --target node --external react --external react-native && bun build ./src/index.ts --outfile ./dist/index.cjs --format cjs --target node --external react --external react-native",
+    "build:types": "tsc -p tsconfig.json",
+    "build": "bun run clean && bun run build:js && bun run build:types",
+    "test": "bun test",
+    "typecheck": "tsc -p tsconfig.json --noEmit && tsc -p tsconfig.test.json",
+    "prepublishOnly": "bun run typecheck && bun test && bun run build"
+  },
+  "keywords": [
+    "react-native",
+    "attachment",
+    "file",
+    "upload",
+    "ui",
+    "component",
+    "expo"
+  ],
+  "peerDependencies": {
+    "react": ">=18.0.0",
+    "react-native": ">=0.73.0"
+  },
+  "devDependencies": {
+    "@types/bun": "latest",
+    "@types/react": "^19.2.18",
+    "@types/react-test-renderer": "^19.1.0",
+    "react": "^19.2.8",
+    "react-native": "^0.87.0",
+    "react-test-renderer": "^19.2.8",
+    "typescript": "^7.0.2"
+  }
+}
