@@ -1,7 +1,7 @@
 # react-native-attachment
 
 Displays file and image attachments with media, metadata, upload states and
-interactive actions — for chat composers, message threads and upload lists.
+interactive actions for chat composers, message threads and upload lists.
 
 - **Zero runtime dependencies.** Only `react` and `react-native` peers — no
   Reanimated, no gradient library, no styling framework.

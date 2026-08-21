@@ -1,7 +1,7 @@
 {
   "name": "react-native-attachment",
   "version": "0.1.0",
-  "description": "File and image attachments for React Native — media, metadata, upload states and actions.",
+  "description": "File and image attachment component for React Native",
   "license": "MIT",
   "type": "module",
   "main": "./dist/index.cjs",
@@ -42,6 +42,14 @@
     "component",
     "expo"
   ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/s1099/react-native-attachment.git"
+  },
+  "bugs": {
+    "url": "https://github.com/s1099/react-native-attachment/issues"
+  },
+  "homepage": "https://github.com/s1099/react-native-attachment#readme",
   "peerDependencies": {
     "react": ">=18.0.0",
     "react-native": ">=0.73.0"
